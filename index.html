@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="w-80 mx-auto  m-3">
+                <h3 class="py-5 px-2">Bookmarker</h3>
+            </div>
+        </header>
+
+        <div class="w-80 mx-auto  my-3 px-2 form text-center">
+            <div class="content mx-auto py-4">
+                <h2 class="my-4">
+                    Bookmark your favorite sites
+    
+                </h2>
+                <p class="pb-2  mb-0 fw-bold">Site Name</p>
+                <input  class="form-control form-control-sm w-75 mx-auto" type="text" placeholder="Bookmark Name" id="sitename">
+                <!--<p class="w-75 mx-auto alert"></p>-->
+
+                <div id="Name-alert" class="alert alert-danger my-2 text-center w-75 mx-auto d-none " role="alert">
+                    Name is Required
+                </div>
+
+                <p class="py-2 mb-0 fw-bold">Site URL</p>
+                <input class="form-control form-control-sm w-75 mx-auto" type="text" placeholder="Web site URL" id="siteURL">
+                <div id="URL-alert" class="alert alert-danger my-2 text-center w-75 mx-auto d-none  " role="alert">
+                    URL is Required
+                </div>
+
+                <button onclick="add_site()" id="submit_btn" class="my-3 btn btn-info">Submit</button>
+            </div>
+            
+        </div>
+
+        
+
+        <div id="sitesContainer" class=" sites-Container w-80 mx-auto  ">
+            
+        </div>
+        
+
+        
+
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
